@@ -1,0 +1,13 @@
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-weight: 700;
+    font-size: 0.5cm;
+    
+    background-image: linear-gradient(to right,  #FF69B4,  #00FFFF);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#head{
+    font-size: 2cm;
+}

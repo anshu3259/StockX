@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./ImageIcon/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product</title>
+    <style>
+      header{
+        padding: 40px;
+        background-image: linear-gradient(to right, #8fcbf3, #94a146 );
+      }
+      .h1{
+      font-size: large;
+      }
+      body{
+        background-image: linear-gradient(to right, #8ff3d5, #f4ffb6 );
+      }
+    </style>
+</head>
+<header>
+  <h1>Cryptocurrency Market </h1>
+  <p>This widget displays crypto assets and then sorts them by their market capitalization.</p>
+</header>
+<body>
+  <br>
+ <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="margin-left: 10rem;">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": 1000,
+  "height": 490,
+  "defaultColumn": "overview",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "USD",
+  "colorTheme": "light",
+  "locale": "in",
+  "isTransparent": true
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+  
+</body>
+</html>

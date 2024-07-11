@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel="shortcut icon" type="x-icon" href="./ImageIcon/logo.svg">
+    <title>mutualFunds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  #head{
+    font-size: 2cm;
+}
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    background-image: linear-gradient(to right, #8ff3d5, #f4ffb6 );
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.info{
+    font-size: 0.8cm;
+}
+
+.a{
+    color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+    <h1 id="head">Mutual Fund Company Comparison</h1>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:green;">
+    ADITYA BIRLA SUN LIFE  
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:blue;">
+    AXIS MUTUAL FUND
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">
+    BANDHAN MUTUAL 
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <p>Aditya Birla Sun Life Infrastructure Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Fund Size - ₹672 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5 Yrs Return 25.66%
+    <br><br>
+    Aditya Birla Sun Life Digital India Fund&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Fund Size - ₹3,643 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5 Yrs Return - 23.51% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+ 
+  <p>	
+    Axis Small Cap Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Fund Size - ₹14,252 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    5 Yrs Return - 27.99%
+    <br><br>
+    
+   
+    Axis Midcap Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+    
+    ₹21,780 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    20.36% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+    
+    Axis Flexi Cap Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+    
+    ₹11,358 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    14.19% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+    
+</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <p>
+    Bandhan Infrastructure Fund  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+    
+    ₹712 Crs  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    26.49%  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <br><br>
+    
+    Bandhan Sterling Value Fund  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+    
+    ₹6,122 Crs  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    26.21%  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+    
+    
+    Bandhan Tax Advantage (ELSS) Fund  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+    Fund Size
+    
+    ₹4,776 Crs  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    23.82%  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+</p>
+</div>
+
+
+
+<div class="row">
+  <div class="column" onclick="openTab('b4');" style="background:rgb(242, 0, 255);">
+    ICICI Prudential
+  </div>
+  <div class="column" onclick="openTab('b5');" style="background:rgb(0, 255, 26);">
+    HSBC Mutual Fund
+  </div>
+  <div class="column" onclick="openTab('b6');" style="background:rgb(13, 224, 161);" id="yell">
+    HDFC Mutual Fund
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b4" class="containerTab" style="display:none;background:rgb(242, 0, 255)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <p>
+    ICICI Prudential Smallcap Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+    
+    ₹6,047 Crs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    30.06%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+    
+    
+  	
+    ICICI Prudential Infrastructure Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+    
+    ₹2,660 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    30.06% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+    
+    
+   	
+    ICICI Prudential BHARAT 22 FOF Scheme &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    Fund Size
+    
+    ₹163 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    25.15% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br></p>
+</div>
+
+<div id="b5" class="containerTab" style="display:none;background:rgb(0, 255, 26)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <p>	
+    HSBC Small Cap Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    Fund Size
+    
+    ₹10,129 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    29.22% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+    
+ 
+    HSBC Infrastructure Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+    Fund Size
+    
+    ₹1,718 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    25.28% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <br><br>
+    
+    
+
+    HSBC Value Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    Fund Size
+     
+    ₹8,555 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    21.93% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br></p>
+</div>
+
+<div id="b6" class="containerTab" style="display:none;background:rgb(183, 202, 13)">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <p>
+    HDFC Small Cap Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+    Fund Size
+    
+    ₹18,999 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    29.54% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br>
+    
+  
+    HDFC Mid-Cap Opportunities Fund &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    Fund Size
+     
+    ₹42,732 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    26.68% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <br><br>
+    
+  
+    HDFC Retirement Savings Fund - Equity Plan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Unranked
+    Fund Size
+    
+    ₹3,337 Crs &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    5 Yrs Return
+    
+    25.08%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br></p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+<br><br><br><br> 
+<div class="info">
+<p ><h1>What is an Asset Management Company?</h1>
+    An Asset Management Company (AMC) is a financial institution that specializes in managing and investing the funds of individuals, institutions, and corporations. An AMC collects money from individuals in the form of investments and pools this money together to create a larger fund. This corpus is then invested in various financial instruments, such as stocks, bonds, and real estate, to generate returns for the investors.
+    <br><br>
+    The role of a fund house is to make investment decisions on behalf of its investors and to manage the assets in their portfolios. This involves choosing a suitable mix of investments and helping investors grow their money.
+    <br>
+    To achieve this, the AMCs appoint professionally qualified people known as fund managers who have investment expertise and experience to manage the assets. Fund managers employ investment strategies and use financial tools, such as risk management techniques, to help manage the portfolio and protect investors' assets.
+    <br>
+    Additionally, AMCs have a support system in place in the form of research analysts who assist the fund managers.</p>
+<br><br><br>
+<p class="info"><h1>How a Mutual Fund Company Manages The Funds?</h1>
+    When you invest with an AMC, you invest in a portfolio that the AMC manages on your behalf. It is AMC's responsibility to make sure that your financial goals are met. This is achieved through the following steps:
+    <br><br>
+    <b>Research and Analysis: </b><br>
+    To build a portfolio for an investor, the fund manager conducts extensive research on market trends, macroeconomic & microeconomic factors, and political aspects. Based on this research, the appropriate securities are selected that will outperform the return expectations of the investors. <br><br>
+    <b>Asset Allocation:</b> <br>
+    Based on market research and the investor's financial objectives, the asset manager allocates the funds to different assets. For example, a debt-oriented fund might invest only 20% in equity-oriented funds to keep risk levels low, while an equity-oriented fund might invest more than 70% in equity and the rest in debt. A balanced fund might end up with 60% in equity and 40% in debt to balance return and risk.
+    <br><br>
+    Having said that, AMCs have to follow the asset allocation approved by the Securities Exchange Board of India (SEBI) for every scheme as per its respective category.
+    <br><br>
+    <b>Portfolio Creation:</b> <br>
+    The creation of a portfolio is a crucial decision made by the AMC. A fund manager aims to create a balanced portfolio that can perform well even in adverse market conditions. The portfolio is constructed considering the risk factors associated with each asset class. <br><br>
+    <b>Performance Review:</b> <br>
+    AMCs are accountable to their investors for the investments they make. To avoid a negative reputation and criticism from investors, it is crucial to regularly evaluate the fund's performance, considering factors such as the net asset value (NAV) and fund returns. This helps AMCs maintain a good reputation and keep their investors satisfied. <br><br>
+    <b>How to Choose a Fund House?</b> <br>
+    When selecting a mutual fund company, investors need to examine its track record thoroughly. Although AMCs are obligated to make investments that align with the investment objective, it is wise for investors to stay informed about news related to the AMC, such as changes in the fund manager or the performance of the schemes managed by the fund.
+    <br><br>
+    Here are some points to consider when choosing an AMC:
+    <br><br>
+    The Reputation of an AMC <br>
+    The market reputation of an AMC takes time to establish, and it is influenced by factors such as consistent performance, stability in management, and a clean track record. Investors need to gather information about AMC's reputation, which can often be found on the company's website. <br><br>
+    <b>The Credibility of a Fund Manager</b> <br>
+    The fund manager is responsible for making investments on behalf of the investors. As a market expert with years of experience in the capital market, AMC would want a highly experienced professional to manage their investment decisions. Therefore, investors must review the credentials and work history of the fund manager. <br><br>
+   <b> Governing Bodies for an AMC</b> <br>
+    Under the oversight of a board of trustees, Asset Management Companies (AMCs) operate in India under the guidance of two major regulatory bodies:
+    <br><br>
+    <b>The Securities and Exchange Board of India (SEBI) <br>
+        The Association of Mutual Funds in India (AMFI)</b> <br><br>
+    SEBI, as the capital market regulator, oversees and regulates the functioning of all mutual fund companies in India. AMFI, on the other hand, is a statutory body formed by mutual fund companies with the goal of promoting transparency and ethical practices within the financial industry.
+    <br><br>
+    All fund houses must abide by AMFI's regulations. Additionally, banks serving as sponsors are also regulated by the Reserve Bank of India (RBI), along with SEBI and AMFI. Ultimately, all these regulatory bodies - SEBI, AMFI, and RBI - are governed by the RBI.
+    <br><br>
+    Guidelines for an AMC by Governing Bodies
+    SEBI, AMFI, and RBI have mandated the following guidelines and practices for mutual fund companies:
+    <br><br>
+    An AMC must not serve as a trustee for any mutual fund
+    An AMC must have a minimum net worth of ₹10 crores
+    The Chairman of an AMC cannot hold a position as a trustee for any mutual fund company <br>
+    The company is prohibited from investing in its schemes, except with full disclosure in the offer documents <br>
+    The key personnel of the company must maintain a positive and untarnished reputation <br><br>
+   <br><b> Reliability of AMC compared to Banks</b>
+    Contrary to popular belief, mutual fund companies, are just as reliable and secure as banks. Like banks, they are governed by the Reserve Bank of India and the Ministry of Finance, ensuring the safety of the investment.
+    <br><br>
+    AMCs are appointed by a sponsor and trustee to manage a pool of funds and operate under the oversight of trustees regulated by SEBI and AMFI. This ensures transparency, accountability, and impartiality, making it a safe and advisable choice for optimizing wealth and maximizing tax savings.</p></div>
+</body>
+</html> 

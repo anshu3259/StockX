@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="./ImageIcon/logo.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks</title>
+    <style>
+      .upperpart{
+        padding:40px;
+        background-color: rgba(29, 79, 216, 0.747);
+      }
+      h1{
+        color:white;
+        font-family:serif;
+       font-size: 2cm;
+      }
+      body{ background-image: linear-gradient(to right, #8ff3d5, #f4ffb6 );
+      }
+      h2{
+        font-size: 1cm;
+        color: black;
+        margin-left: 20%;
+        margin-right: 20%;
+        text-decoration:underline;
+      }
+      p{
+         font-size:0.7cm;
+         text-decoration: wavy;
+      }
+    </style>
+</head>
+<body>
+  <header>
+  <div class="upperpart">
+    <h1>Indian Shels Market </h1>
+    <p>See the top five gaining, losing, and most active 
+      stocks for the day. It updates based on current 
+      market activity – so you'll always see the most relevant stocks.</p>
+  </div>
+  </header>
+  <br><br> <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container" style="margin-left: 8rem;">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+    {
+    "colorTheme": "light",
+    "dateRange": "1D",
+    "exchange": "BSE",
+    "showChart": true,
+    "locale": "in",
+    "largeChartUrl": "",
+    "isTransparent": true,
+    "showSymbolLogo": true,
+    "showFloatingTooltip": false,
+    "width": "1100",
+    "height": "700",
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(255, 0, 0, 1)",
+    "gridLineColor": "rgba(240, 243, 250, 0)",
+    "scaleFontColor": "rgba(0, 0, 0, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(182, 182, 182, 0.12)"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <h2>Investment in Stocks is related to market risk</h2>
+  <p>Equity risk applies to investments in the stock market and refers to the risk that changing prices in the stock market may render an individual investment less valuable when the owner wants to sell. This type of risk applies doubly to stock funds.</p>
+</body>
+</html>

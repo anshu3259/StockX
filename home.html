@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="./ImageIcon/logo.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockX - online Demat, Trading</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hoverEffect.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./LoginAndRegister/LoginAndRegisterStyle.css"
+    />
+  </head>
+  <body id="IndexBody">
+    <!-- 
+        - #HEADER
+      -->
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./ImageIcon/logo.svg"
+            width="45"
+            height="45"
+            alt="Cryptex logo"
+          />StockX
+        </a>
+      </div>
+    </header>
+    <br /><br /><br /><br />
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+        <a
+          href="https://in.tradingview.com/"
+          rel="noopener nofollow"
+          target="_blank"
+        ></a>
+      </div>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+      >
+          {
+          "symbols"; [
+            {
+              "proName": "FOREXCOM:SPXUSD",
+              "title": "S&P 500"
+            },
+            {
+              "proName": "FOREXCOM:NSXUSD",
+              "title": "US 100"
+            },
+            {
+              "proName": "FX_IDC:EURUSD",
+              "title": "EUR/USD"
+            },
+            {
+              "proName": "BITSTAMP:BTCUSD",
+              "title": "Bitcoin"
+            },
+            {
+              "proName": "BITSTAMP:ETHUSD",
+              "title": "Ethereum"
+            }
+          ],
+          "showSymbolLogo"; true,
+          "colorTheme"; "light",
+          "isTransparent"; false,
+          "displayMode"; "adaptive",
+          "locale"; "in"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END-->
+
+    <!--Middle part-->
+    <div class="middle_part">
+      <div class="Grow_Middle_Left">
+        <h2 class="InvestIn">
+          Invest in
+          <div class="Slidder_vertical">
+            <span class="Stocks_Color">Shels</span>
+            <span class="MutualFunds_Color">Mutual Funds</span>
+            <span class="UsStocks_Color">US Stocks</span>
+            <span class="FDs_Color">FDs</span>
+          </div>
+        </h2>
+
+        <div class="Grow_Middle_Left_Text">
+          Trusted by <span style="font-weight: bold">Millions</span> of Indians.
+          Start investing today.
+        </div>
+
+        <div class="StockX_Started_Container">
+          <a href="home.html">
+            <button class="Goww_StartedButton">Get Started</button></a
+          >
+        </div>
+      </div>
+
+      <div class="Grow_Middle_Right">
+        <div class="Grow_middle_col2">
+          <a class="mutualFunds" href="mutual fund.html">
+            <img src="./ImageIcon/MutualFunds.svg" width="49px" height="49px" />
+            <h3>Mutual Funds</h3>
+          </a>
+
+          <a class="Stocks" href="stock.html">
+            <img src="./ImageIcon/Stocks.svg" width="49px" height="49px" />
+            <h3>Stocks</h3>
+          </a>
+        </div>
+        <div class="Grow_middle_col2">
+          <a class="fixedDeposit" href="fd.html">
+            <img
+              src="./ImageIcon/FixedDeposits.svg"
+              width="49px"
+              height="49px"
+            />
+            <h3>Fixed Deposit</h3>
+          </a>
+
+          <a class="usStocks" href="usstock.html">
+            <img src="./ImageIcon/UsStocks.svg" width="49px" height="49px" />
+            <h3>US Stocks</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="part">
+        <h1>Overview Of Some Stocks</h1>
+        <p> simple chart of a simple, single stock. A great in-depth option for future investments </p>
+    </div>
+    <br>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-containerr" style="margin-left:1rem;">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+    { 
+    "symbols" [
+      [
+        "Apple",
+        "AAPL|1D"
+      ],
+      [
+        "Google",
+        "GOOGL|1D"
+      ],
+      [
+        "Microsoft",
+        "MSFT|1D"
+      ]
+    ],
+    "chartOnly"; false,
+    "width"; 1000,
+    "height"; 500,
+    "locale"; "in",
+    "colorTheme"; "light",
+    "autosize";  false,
+    "showVolume"; false,
+    "showMA"; false,
+    "hideDateRanges"; false,
+    "hideMarketStatus"; false,
+    "hideSymbolLogo"; false,
+    "scalePosition"; "right",
+    "scaleMode"; "Normal",
+    "fontFamily"; "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "fontSize"; "10",
+    "noTimeScale"; false,
+    "valuesTracking"; "1",
+    "changeMode"; "price-and-percent",
+    "chartType"; "area",
+    "maLineColor"; "#2962FF",
+    "maLineWidth"; 1,
+    "maLength"; 9,
+    "lineWidth"; 2,
+    "lineType"; 0,
+    "dateRanges"; [
+      "1d|1",
+      "1m|30",
+      "3m|60",
+      "12m|1D",
+      "60m|1W",
+      "all|1M"
+    ] 
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+    <!--Our Product-->
+    <div class="StockXProduct">
+      <div class="OurProduct_Text">OUR PRODUCTS</div>
+      <h2 class="yourMoneyYourChoice_Text">Your Money. Your Choice.</h2>
+
+      <div class="StockXProduct_Navbar">
+        <div class="StockXProduct_StocksDetails">
+          <svg
+            width="49"
+            height="49"
+            viewBox="0 0 49 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="StockActive"
+          >
+            <path
+              d="M12.25 34.485L21.25 25.4625L27.25 31.4625L40 17.1225L37.885 15L27.25 26.9625L21.25 20.9625L10 32.235L12.25 34.485Z"
+              fill="#5367FF"
+              stroke="#5367FF"
+              stroke-width="0.75"
+            />
+          </svg>
+          <div class="StockXProduct_StocksText">Stocks</div>
+        </div>
+
+     
+        <span class="NavbarUnderlineActive"></span>
+      </div>
+
+      <div class="StockXProduct_Display">
+        <div class="StockXProduct_StocksDetails_Display">
+          <div class="StockXProduct_StocksDetails_Display_LeftPart">
+            <img
+              src="ImageNavigation\stocks.png"
+              width="562px"
+              height="355px"
+              class="ChangeImageAccordingNavigation"
+            />
+          </div>
+          <div class="StockXProduct_StocksDetails_Display_RightPart">
+            <h2>
+              <span class="ZeroText">Zero</span>
+              <span class="InsideContent">account charges</span>
+            </h2>
+            <div class="stocksDetails_Text">
+              You don't have to pay a single rupee for opening a stocks account
+              or account maintenance.
+            </div>
+            <div class="StockXProduct_Button_CreateAccountFree">
+              <button>Know more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="veiwAllProduct_Container">
+        <a class="text" href="allproduct.html">
+          View all Country Stocks price
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <br />
+
+    <!--Trusted By Container-->
+    <div class="StockX_TrustedByContainer">
+      <div class="StockX_TrustedBackgroundImage">
+        <div class="StockXTrusted_Left">
+          <h2 class="StockXTrusted_Left_Heading">
+            Trusted by <br />
+            20 million+ users
+          </h2>
+          <div class="StockXTrusted_left_Text">
+            Our cutting-edge technology ensure that all your information remains
+            fully encrypted and secure.
+          </div>
+        </div>
+        <div class="StockXTrusted_right"></div>
+      </div>
+    </div>
+    <!--Will be add after-->
+
+    <!--Keep Learning Keep Growing-->
+
+    <div class="StockXLearningSection">
+      <h2 class="StockXLearning_Heading">Keep learning. Keep growing.</h2>
+
+      <div class="StockXLearning_Container">
+        <a href="" class="howToSelect">
+          <div class="StockXLeaning_Image">
+            <img src="./ImageLearning/howToSelect.png" />
+          </div>
+          <div class="StockXLearning_Details">
+            How to Select/Pick Stocks for Intraday
+          </div>
+        </a>
+        <a href="" class="beginnersGuide">
+          <div class="StockXLeaning_Image">
+            <img src="./ImageLearning/beginning.png" />
+          </div>
+          <div class="StockXLearning_Details">
+            Beginners to Guide to Mutual Funds
+          </div>
+        </a>
+        <a href="" class="howToDiversify">
+          <div class="StockXLeaning_Image">
+            <img src="./ImageLearning/Diversify.png" />
+          </div>
+          <div class="StockXLearning_Details">
+            How to Diversify in the Time of Market Volatility
+          </div>
+        </a>
+      </div>
+
+      <div class="StockXLearning_moreSection">
+        <a href="">
+          View all article
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!--In The Press-->
+    <div class="StockXInPressSection">
+      <div class="StockXInPressSection_Heading">
+        <hr />
+        <h1 class="StockXInpressSection_Text">In The Press</h1>
+        <hr />
+      </div>
+      <div class="StockXInPress_Name">
+        <img src="./InPressSection/ys.9166bd37.svg" />
+        <img src="./InPressSection/live.7edf8d7a.svg" />
+        <img src="./InPressSection/business.dc402a84.svg" />
+        <img src="./InPressSection/enter.09e9d78c.svg" />
+      </div>
+    </div>
+
+    <!--Creating proud investors-->
+    <div class="StockXInvestor">
+      <div class="StockXInvestor_top">
+        <div class="headingandDetails">
+          <h2>Creating proud investors.</h2>
+          <p>
+            You can feel the pride of being a StockX investor in their words.
+          </p>
+        </div>
+        <div class="StockXInvestor_moreSection">
+          <a href="#"> View More <i class="fa-solid fa-arrow-right"></i> </a>
+        </div>
+      </div>
+
+      <div class="StockXInvestor_ReviewsContainer">
+        <div class="StockXInvestor_ReviewBox">
+          <div class="StockXInvestor_Profile_star">
+            <div class="StockXInvestor_image">
+              <img src="./ImageInvestor/rahul sir.png" />
+            </div>
+            <div class="StockXInvestor_Star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="StockXInvestor_Telling">
+            <p>
+              “StockX.in was the platform where I first got onboard to MF and I
+              would have to say, even for a beginner like me it made things
+              quite easier to explore and invest.
+            </p>
+
+            <div class="StockXInvestor_Name_profession">
+              <div class="StockXInvestor_Name">Dr Rahul Dev sah</div>
+              <div class="StockXInvestor_Profession">
+                Product Specialist, Google
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="StockXInvestor_ReviewBox">
+          <div class="StockXInvestor_Profile_star">
+            <div class="StockXInvestor_image">
+              <img src=".\ImageInvestor\jyotimam.jpg" />
+            </div>
+            <div class="StockXInvestor_Star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="StockXInvestor_Telling">
+            <p>
+              “Actually, the UI is extremely simple and easy for users to adapt,
+              that’s what makes it unique. Many of my referrals have also joined
+              and enjoying StockX.
+            </p>
+
+            <div class="StockXInvestor_Name_profession">
+              <div class="StockXInvestor_Name">Ms Jyoti Bala</div>
+              <div class="StockXInvestor_Profession">
+                Solution Architect, Amazon Web Services
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="StockXInvestor_ReviewBox">
+          <div class="StockXInvestor_Profile_star">
+            <div class="StockXInvestor_image">
+              <img src="./ImageInvestor/RRR1.jpg" />
+            </div>
+            <div class="StockXInvestor_Star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="StockXInvestor_Telling">
+            <p>
+              “If you are one of those who would like to take control of how you
+              save, use StockX. It’s ridiculously easy portal. It just took me 5
+              mins to set up and invest.
+            </p>
+
+            <div class="StockXInvestor_Name_profession">
+              <div class="StockXInvestor_Name">Dr Rajendra kumar mahto</div>
+              <div class="StockXInvestor_Profession">
+                Founder of Uber Medspa & Style Lounge
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="InvestAnyWhereContainer">
+      <div class="InvestAnyWhereContainer_Left">
+        <h2 class="InvestAnyWhereContainer_Left_Text">
+          Invest anywhere, anytime.
+        </h2>
+        <p>
+          Don’t worry about which device to use. Because we’re in every one of
+          them.
+        </p>
+
+        <div class="ListContainer">
+          <div class="ListContainer_List">
+            <div class="ListContainer_Icon">
+              <img src="./imageList/dash.a7e0c55c.svg" />
+            </div>
+            <div class="ListContainer_Details">
+              <div class="ListContainer_Details_Heading">
+                Stay on top of everything
+              </div>
+              <div class="ListContainer_Details_Heading_Description">
+                Keep track of your investments at anytime with StockX.
+              </div>
+            </div>
+          </div>
+          <div class="ListContainer_List">
+            <div class="ListContainer_Icon">
+              <img src="./imageList/sync.3ac006aa.svg" />
+            </div>
+            <div class="ListContainer_Details">
+              <div class="ListContainer_Details_Heading">Always in Sync</div>
+              <div class="ListContainer_Details_Heading_Description">
+                StockX will take care of synchronizing data so you can focus on
+                investing.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="InvestAnyWhereContainer_Right">
+        <div class="InvestAnyWhereContainer_Right_1">
+          <div class="applist">
+            <img src="./imageList/applicationImage/ios.png" />
+          </div>
+          <div class="applist">
+            <img src="./imageList/applicationImage/android.png" />
+          </div>
+        </div>
+        <div class="InvestAnyWhereContainer_Right_1">
+          <div class="applist">
+            <img src="./imageList/applicationImage/web.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Support Section-->
+    <div class="SupportSection">
+      <div class="SupportContainer">
+        <div class="SupportSection_left">
+          <h2>We’re with you, at every step.</h2>
+          <p>
+            For any query you have, find the answer quickly on our Help &
+            Support. Need a little more help? We’re happy to talk via call or
+            chat.
+          </p>
+          <button>Get In Touch</button>
+        </div>
+        <div class="SupportSection_Right">
+          <img
+            src="./ImageSupport/hns-support-img.png"
+            width="261px"
+            height="327px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Section-->
+    <div class="FooterSection">
+      <div class="row">
+        <div class="StockXCompanyDetails">
+          <img
+            src="./FooterSectionLogo/logo-light-StockX.1815ad63.svg"
+            width="150px"
+            height="50"
+          />   <p style="padding-left: 3.3rem;" >StockX</p>
+          <p class="FooterSection_Address1">No.11, New building, MorabadiRoad</p>
+          <p class="FooterSection_Address3">Ranchi 834001</p>
+
+          <!--using the image available on the -->
+          <div class="FooterSection_ContactSocialMedia">
+            <div class="ContactUs">Contact Us</div>
+            <a href="#" class="SocialMedia_icon"
+              ><img src="./SocialMediaIcon/fb_icon_Groww.1c94e937.svg"
+            /></a>
+            <a href="#" class="SocialMedia_icon"
+              ><img src="./SocialMediaIcon/twitter_icon_Groww.4cb988f6.svg"
+            /></a>
+            <a href="#" class="SocialMedia_icon"
+              ><img src="./SocialMediaIcon/yt_icon_Groww.ec96b677.svg"
+            /></a>
+            <a href="#" class="SocialMedia_icon"
+              ><img src="./SocialMediaIcon/instagram_icon_Groww.0454c1a2.svg"
+            /></a>
+         
+            </a>
+          </div>
+        </div>
+        <div class="FooterSection_Product">
+          <h2>PRODUCTS</h2>
+          <div class="FooterSection_ProductList">Stocks</div>
+          <div class="FooterSection_ProductList">Futures & Options</div>
+          <div class="FooterSection_ProductList">Mutual Funds</div>
+          <div class="FooterSection_ProductList">Fixed Deposit</div>
+          <div class="FooterSection_ProductList">US Stocks</div>
+        </div>
+        <div class="FooterSection_StockX">
+          <h2>StockX</h2>
+          <div class="FooterSection_StockXList">About Us</div>
+          <div class="FooterSection_StockXList">Pricing</div>
+          <div class="FooterSection_StockXList">Blog</div>
+          <div class="FooterSection_StockXList">Media & Press</div>
+          <div class="FooterSection_StockXList">Carrees</div>
+          <div class="FooterSection_StockXList">Help & Support</div>
+        </div>
+        <div class="FooterSection_QuickLink">
+          <h2>QUICK LINKS</h2>
+          <div class="FooterSection_QuickLinkList">AMC Mutual Funds</div>
+          <div class="FooterSection_QuickLinkList">Calculators</div>
+          <div class="FooterSection_QuickLinkList">Glossary</div>
+          <div class="FooterSection_QuickLinkList">Open Demat Account</div>
+          <div class="FooterSection_QuickLinkList">StockX Digest</div>
+          <div class="FooterSection_QuickLinkList">StockX Academy</div>
+          <div class="FooterSection_QuickLinkList">Sitemap</div>
+        </div>
+      </div>
+
+      <div class="horizontalLine"></div>
+
+      <div class="StockXFooterlast">
+        <div class="StockXCopyRight">
+          © 2023 StockX. All right reserved, Built with 💖 in india
+        </div>
+    
+    </div>
+    <script src="Javascript.js"></script>
+   
+  </body>
+</html>
